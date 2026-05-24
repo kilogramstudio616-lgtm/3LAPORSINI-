@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bantuan - LAPOR SINI</title>
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- IKON & FONT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        .pertanyaan {
+            border-left: 4px solid var(--biru-utama);
+            transition: all 0.3s ease;
+        }
+        .pertanyaan:hover {
+            background-color: var(--abu-terang);
+            transform: translateX(5px);
+        }
+        .ikon-bantuan {
+            font-size: 2.5rem;
+            color: var(--biru-utama);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🟡 MENU NAVIGASI (SAMA PERSIS) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold text-white" href="index.html">
+           LAPOR SINI!!!
+        </a>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Beranda </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html"> Tentang </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cara.html"> Cara Lapor </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="daftar.html"> Daftar Laporan </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html"> Profil </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="bantuan.html"> Bantuan </a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link btn btn-light text-primary fw-bold px-3 py-1" href="login.html">
+                Masuk
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- 🟡 HEADER HALAMAN BANTUAN -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <i class="bi bi-question-circle-fill ikon-bantuan mb-3"></i>
+        <h2 class="judul-bagian mb-2">Pusat Bantuan</h2>
+        <p class="text-muted">Temukan jawaban atas pertanyaan yang sering diajukan dan panduan penggunaan aplikasi</p>
+    </div>
+</section>
+
+<!-- 🟡 KONTEN UTAMA -->
+<div class="container py-5">
+    <div class="row g-4">
+
+        <!-- KOLOM KIRI: PANDUAN LANGKAH -->
+        <div class="col-lg-5">
+            <div class="card shadow-sm h-100 border-0">
+                <div class="card-body p-4">
+                    <h4 class="text-primary fw-bold mb-4"><i class="bi bi-list-check me-2"></i> Langkah Penggunaan</h4>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-3">
+                            <span class="badge bg-primary rounded-circle p-2">1</span>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Buat Akun / Masuk</h5>
+                            <p class="text-muted small">Daftar atau masuk menggunakan akun Anda agar bisa mengirim dan memantau laporan.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="me-3">
+                            <span class="badge bg-primary rounded-circle p-2">2</span>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Isi Formulir Laporan</h5>
+                            <p class="text-muted small">Lengkapi data, isi judul, deskripsi kejadian, lokasi, dan lampirkan foto jika ada bukti.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="me-3">
+                            <span class="badge bg-primary rounded-circle p-2">3</span>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Kirim Laporan</h5>
+                            <p class="text-muted small">Cek kembali data lalu kirim. Laporan akan diverifikasi oleh petugas terkait.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <span class="badge bg-primary rounded-circle p-2">4</span>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Pantau & Tindak Lanjut</h5>
+                            <p class="text-muted small">Lihat status laporan Anda di halaman daftar laporan atau menu profil.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- KOLOM KANAN: PERTANYAAN UMUM -->
+        <div class="col-lg-7">
+            <h4 class="text-primary fw-bold mb-4"><i class="bi bi-chat-left-text me-2"></i> Pertanyaan Umum (FAQ)</h4>
+
+            <div class="pertanyaan p-3 rounded shadow-sm mb-3">
+                <h5 class="fw-bold text-dark">❓ Apakah laporan saya akan bersifat rahasia?</h5>
+                <p class="text-muted mb-0">Ya, identitas Anda hanya diketahui oleh admin dan tidak akan ditampilkan ke publik demi keamanan dan kenyamanan pengguna.</p>
+            </div>
+
+            <div class="pertanyaan p-3 rounded shadow-sm mb-3">
+                <h5 class="fw-bold text-dark">❓ Berapa lama laporan ditanggapi?</h5>
+                <p class="text-muted mb-0">Laporan akan diverifikasi dalam waktu 1x24 jam. Penyelesaian masalah tergantung jenis dan tingkat kesulitan laporan.</p>
+            </div>
+
+            <div class="pertanyaan p-3 rounded shadow-sm mb-3">
+                <h5 class="fw-bold text-dark">❓ Apakah bisa mengubah laporan yang sudah dikirim?</h5>
+                <p class="text-muted mb-0">Tidak bisa diubah setelah dikirim. Namun Anda bisa menghubungi admin jika ada kesalahan data yang penting.</p>
+            </div>
+
+            <div class="pertanyaan p-3 rounded shadow-sm mb-3">
+                <h5 class="fw-bold text-dark">❓ Bagaimana jika laporan saya tidak ditanggapi?</h5>
+                <p class="text-muted mb-0">Anda bisa menghubungi kontak kami atau mengirim ulang laporan dengan menyertakan nomor tiket laporan sebelumnya.</p>
+            </div>
+
+            <div class="pertanyaan p-3 rounded shadow-sm">
+                <h5 class="fw-bold text-dark">❓ Jenis laporan apa saja yang boleh dikirim?</h5>
+                <p class="text-muted mb-0">Laporan kerusakan fasilitas, pelanggaran aturan sekolah/lingkungan, saran pembangunan, atau hal yang mengganggu ketertiban umum.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BAGIAN KONTAK BANTUAN -->
+    <div class="mt-5 p-4 bg-primary text-white rounded-3 shadow text-center">
+        <h4 class="fw-bold">Masih bingung atau ada kendala?</h4>
+        <p>Hubungi tim dukungan kami melalui kontak di bawah ini</p>
+        <div class="mt-3">
+            <span class="me-3"><i class="bi bi-envelope-fill me-1"></i> bantuan_lapor@gmail.com</span>
+            <span><i class="bi bi-whatsapp me-1"></i> 0857-4875-7255</span>
+        </div>
+    </div>
+
+</div>
+
+     <!-- 🟡 FOOTER (SAMA PERSIS) -->
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold text-primary">LAPOR SINI</h5>
+            <p class="text-muted small">
+              Wadah Pengaduan Masyarakat & Sekolah. Tempat menyampaikan keluhan,
+              saran, dan informasi secara aman dan nyaman.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-3">Navigasi Cepat</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-muted text-decoration-none">Beranda</a></li>
+              <li><a href="tentang.html" class="text-muted text-decoration-none">Tentang</a></li>
+              <li><a href="cara.html" class="text-muted text-decoration-none">Cara Lapor</a></li>
+              <li><a href="daftar.html" class="text-muted text-decoration-none">Daftar Laporan</a></li>
+              <li><a href="profil.html" class="text-muted text-decoration-none">Profil Saya</a></li>
+              <li><a href="bantuan.html" class="text-muted text-decoration-none">Bantuan</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-3">Kontak Pembuat</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-1">Mojokerto, Indonesia</li>
+              <li class="mb-1">+62 812-XXXX-XXXX</li>
+              <li class="mb-1">lapor_sini@gmail.com</li>
+              <li>SMK NEGERI ... | Kelas X RPL 2</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4 mb-3" />
+        <p class="text-center text-muted small mb-0">
+          &copy; 2026 LAPOR SINI | Dibuat SISWA SMKN 2 KOTA MOJOKERTO - Semua Hak Dilindungi
+        </p>
+      </div>
+    </footer>
+
+
+<script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+/* ====================================
+   GAYA UTAMA - LAPOR SINI
+==================================== */
+
+/* WARNA UTAMA */
+:root {
+    --biru-tua: #084298;
+    --biru-utama: #0B5ED7;
+    --biru-muda: #CFE2FF;
+    --hijau: #198754;
+    --merah: #DC3545;
+    --kuning: #FFC107;
+    --abu: #6C757D;
+    --abu-terang: #F8F9FA;
+    --hitam: #212529;
+}
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--hitam);
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ============= BAGIAN UTAMA / HEADER ============= */
+.bagian-utama {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-latar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.lapisan-gelap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(8, 66, 152, 0.75), rgba(25, 135, 84, 0.65));
+    z-index: 2;
+}
+
+.bagian-utama .container {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+
+.bagian-utama h1 {
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1.5rem;
+}
+
+.bagian-utama p {
+    font-size: 1.1rem !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
+}
+
+.text-warning {
+    font-weight: 600 !important;
+}
+
+.tombol-utama, .tombol-profil {
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin: 0 8px;
+}
+
+.tombol-utama {
+    background-color: var(--biru-utama);
+    color: white;
+    border: none;
+}
+
+.tombol-profil {
+    background-color: white;
+    color: var(--biru-utama);
+    border: none;
+}
+
+.tombol-utama:hover, .tombol-profil:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    color: white;
+    background-color: var(--biru-tua);
+}
+
+.tombol-profil:hover {
+    background-color: var(--abu-terang);
+    color: var(--biru-utama);
+}
+
+/* ============= BAGIAN KEUNGGULAN - ZIGZAG KANAN KIRI ============= */
+.bagian-keunggulan {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.judul-bagian {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--biru-tua);
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.judul-bagian::after {
+    content: '';
+    width: 140px;
+    height: 4px;
+    background-color: var(--biru-utama);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+
+/* GAYA UTAMA KOTAK LAYANAN - POSISI BERGANTI */
+.kotak-layanan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 3rem;
+    margin-bottom: 3rem;
+    min-height: 320px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* KOTAK BIASA: IKON DI KIRI, TEKS DI KANAN */
+.kotak-layanan .ikon-layanan {
+    flex: 0 0 25%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.kotak-layanan .isi-layanan {
+    flex: 0 0 70%;
+    text-align: left;
+}
+
+/* KOTAK TERBALIK: IKON DI KANAN, TEKS DI KIRI */
+.kotak-layanan.terbalik {
+    flex-direction: row-reverse;
+}
+
+.kotak-layanan.terbalik .isi-layanan {
+    text-align: right;
+}
+
+.kotak-layanan:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ikon-layanan .ikon-besar {
+    font-size: 6rem;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+}
+
+.isi-layanan h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--biru-tua);
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.kotak-layanan.terbalik .isi-layanan h3 {
+    color: var(--hijau);
+}
+
+.isi-layanan h3::after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: var(--biru-utama);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.kotak-layanan.terbalik .isi-layanan h3::after {
+    background-color: var(--hijau);
+    left: auto;
+    right: 0;
+}
+
+.isi-layanan p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--abu);
+    margin-bottom: 0.8rem;
+    text-align: justify;
+}
+
+.kotak-layanan.terbalik .isi-layanan p {
+    text-align: justify;
+}
+
+/* RESPONSIF - Tampilan di HP dan Tablet */
+@media (max-width: 991px) {
+    .kotak-layanan, .kotak-layanan.terbalik {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 2rem 1.8rem;
+        gap: 1.5rem;
+    }
+
+    .kotak-layanan .isi-layanan,
+    .kotak-layanan.terbalik .isi-layanan {
+        text-align: center !important;
+    }
+
+    .isi-layanan h3::after {
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .ikon-layanan {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .kotak-layanan, .kotak-layanan.terbalik {
+        padding: 1.5rem 1.2rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+
+    .isi-layanan h3 {
+        font-size: 1.4rem;
+    }
+
+    .isi-layanan p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ============= BAGIAN KELOMPOK & KOMUNITAS ============= */
+.bg-light {
+    background-color: var(--abu-terang) !important;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============= KAKI HALAMAN ============= */
+footer {
+    background-color: var(--hitam) !important;
+}
+
+footer h5, footer h6 {
+    color: white;
+}
+
+footer p, footer a {
+    color: var(--abu) !important;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--biru-utama) !important;
+    padding-left: 5px;
+}
+
+/* ============= KEUNGGULAN - MODEL ZIGZAG KE POJOK (SEPERTI CONTOH WEBSITE) ============= */
+.item-layanan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    position: relative;
+}
+
+/* IKON DI KIRI: LARI SAMPAI POJOK KIRI LAYAR */
+.item-layanan .ikon-layanan {
+    flex: 0 0 auto;
+    position: absolute;
+    left: 0; /* <--- NEMPEL POJOK KIRI */
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 0;
+}
+
+.item-layanan .ikon-layanan .gambar-fitur {
+    width: 80px; /* Ukuran ikon pas */
+    height: auto;
+    object-fit: contain;
+}
+
+/* TEKS BAGIAN KIRI: MASUK KE DALAM, JAUH DARI KIRI */
+.item-layanan .isi-layanan {
+    flex: 1;
+    margin-left: 120px; /* <--- JARAK KOSONG BESAR DI KIRI */
+    margin-right: 8rem;
+    text-align: left;
+}
+
+/* ---------- KONDISI TERBALIK (IKON DI KANAN) ---------- */
+.item-layanan.terbalik {
+    flex-direction: row-reverse;
+}
+
+/* IKON DI KANAN: LARI SAMPAI POJOK KANAN LAYAR */
+.item-layanan.terbalik .ikon-layanan {
+    left: auto;
+    right: 0; /* <--- NEMPEL POJOK KANAN */
+}
+
+/* TEKS BAGIAN KANAN: MASUK KE DALAM, JAUH DARI KANAN */
+.item-layanan.terbalik .isi-layanan {
+    margin-left: 8rem;
+    margin-right: 120px; /* <--- JARAK KOSONG BESAR DI KANAN */
+    text-align: right;
+}
+
+/* Garis Pemisah */
+.pemisah-layanan {
+    max-width: 100%;
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #e3e6f0;
+}
+
+/* JUDUL & GARIS BAWAH */
+.item-layanan .isi-layanan h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--biru-tua);
+    margin-bottom: 0.7rem;
+    position: relative;
+    padding-bottom: 0.4rem;
+}
+
+.item-layanan.terbalik .isi-layanan h3 {
+    color: var(--hijau);
+}
+
+.item-layanan .isi-layanan h3::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: var(--biru-utama);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.item-layanan.terbalik .isi-layanan h3::after {
+    background-color: var(--hijau);
+    left: auto;
+    right: 0;
+}
+
+/* TEKS */
+.item-layanan .isi-layanan p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--abu);
+    text-align: justify;
+}
+
+/* RESPONSIF: DI HP JADI RATA TENGAH KEMBALI */
+@media (max-width: 768px) {
+    .item-layanan, 
+    .item-layanan.terbalik {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .item-layanan .ikon-layanan,
+    .item-layanan.terbalik .ikon-layanan {
+        position: static !important;
+        transform: none !important;
+    }
+
+    .item-layanan .isi-layanan,
+    .item-layanan.terbalik .isi-layanan {
+        margin: 0 !important;
+        text-align: center !important;
+    }
+
+    .item-layanan .isi-layanan h3::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}

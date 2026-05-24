@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAPOR SINI - Wadah Pengaduan Masyarakat & Sekolah</title>
+
+    <!-- Berkas Bantuan -->
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Tambahan Agar Lebih Lembut -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- 🟡 BAGIAN MENU ATAS (SERAGAM UNTUK SEMUA HALAMAN) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold"
+          href="index.html"
+          title="Beranda - LAPOR SINI"
+        >
+           LAPOR SINI!!
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"> Beranda </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html"> Tentang </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="cara.html"> Cara Lapor </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="daftar.html"> Daftar Laporan </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html"> Profil </a>
+            </li>
+
+            <li class="nav-item mt-1 mt-lg-0 ms-lg-2">
+              <a
+                class="nav-link btn btn-light text-primary fw-bold px-3"
+                href="login.html"
+              >
+                Masuk
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 🟡 BAGIAN UTAMA DENGAN VIDEO LATAR -->
+    <section class="bagian-utama text-center">
+      <!-- Video Latar Belakang -->
+      <video class="video-latar" autoplay muted loop playsinline>
+        <source src="image/banner3.mp4" type="video/mp4" />
+        Maaf, peramban Anda tidak mendukung pemutaran video.
+      </video>
+
+      <!-- Lapisan Warna -->
+      <div class="lapisan-warna"></div>
+
+      <div class="container">
+        <h1 class="display-5 fw-bold mb-4">Selamat Datang di LAPOR SINI</h1>
+
+        <p class="fs-5 mb-5 mx-auto" style="max-width: 700px">
+          Sampaikan keluhan, saran, atau informasi seputar lingkungan.
+          <br />
+          Bisa disampaikan secara Terbuka maupun
+          <strong class="text-warning fw-semibold"> RAHASIA / ANONIM </strong>.
+        </p>
+
+        <div class="d-grid d-md-flex gap-3 justify-content-center mt-4">
+          <a
+            href="formulir.html"
+            class="btn tombol-utama fs-6 fw-medium"
+            title="Buat Laporan"
+          >
+            <i class="bi bi-pencil-square me-2"></i>
+            BUAT LAPORAN SEKARANG
+          </a>
+
+          <a
+            href="profil.html"
+            class="btn tombol-profil fs-6 fw-medium"
+            title="Lihat Profil"
+          >
+            <i class="bi bi-person-circle me-2"></i>
+            LIHAT PROFIL SAYA
+          </a>
+        </div>
+      </div>
+    </section>
+
+<!-- 🟡 BAGIAN KEUNGGULAN -->
+    <section class="bagian-keunggulan">
+      <div class="container">
+
+        <h2 class="judul-bagian">
+          Keunggulan Layanan Kami
+        </h2>
+
+        <!-- ITEM 1 - TEKS KIRI -->
+        <div class="item-layanan">
+          <div class="ikon-layanan">
+            <img src="image/Keamanann1.jpg" alt="Keamanan" class="gambar-fitur">
+          </div>
+          <div class="isi-layanan">
+            <h3>Keamanan Terjamin & Kerahasiaan Penuh</h3>
+            <p>Privasi Anda aman sepenuhnya. Laporan bisa dikirim anonim, data terenkripsi, dan identitas pelapor terlindungi.</p>
+          </div>
+        </div>
+
+        <!-- GARIS PEMISAH -->
+        <hr class="pemisah-layanan">
+
+        <!-- ITEM 2 - TEKS KANAN -->
+        <div class="item-layanan terbalik">
+          <div class="ikon-layanan">
+            <img src="image/Lingkungan1783e3aa.jpg" alt="Lingkungan" class="gambar-fitur">
+          </div>
+          <div class="isi-layanan">
+            <h3>Solusi untuk Lingkungan Umum</h3>
+            <p>Jembatan warga & pihak berwenang. Laporkan kerusakan, kebersihan, atau gangguan. Langsung ke instansi terkait.</p>
+          </div>
+        </div>
+
+        <!-- GARIS PEMISAH -->
+        <hr class="pemisah-layanan">
+
+        <!-- ITEM 3 - TEKS KIRI -->
+        <div class="item-layanan">
+          <div class="ikon-layanan">
+            <img src="image/Pendidikan.jpg" alt="Pendidikan" class="gambar-fitur">
+          </div>
+          <div class="isi-layanan">
+            <h3>
+              Pendidikan & Sekolah</h3>
+            <p>Wadah khusus warga sekolah. Laporkan fasilitas, keamanan, atau saran. Ciptakan lingkungan belajar nyaman & berkualitas.</p>
+          </div>
+        </div>
+
+        <!-- GARIS PEMISAH -->
+        <hr class="pemisah-layanan">
+
+        <!-- ITEM 4 - TEKS KANAN -->
+        <div class="item-layanan terbalik">
+          <div class="ikon-layanan">
+            <img src="image/penanganan.jpg" alt="Penanganan" class="gambar-fitur">
+          </div>
+          <div class="isi-layanan">
+            <h3>Penanganan Cepat & Transparan</h3>
+            <p>Pantau laporan kapan saja: diterima, diproses, hingga selesai. Proses terbuka, jelas, dan pasti ditindaklanjuti.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 📌 GARIS PEMBATAS -->
+    <hr class="garis-pembatas" />
+
+<!-- ✅ BAGIAN KOMUNITAS -->
+    <section class="bagian-komunitas py-5 bg-light">
+      <div class="container">
+
+        <!-- JUDUL -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold display-6">Kelompok & Komunitas</h2>
+
+          <p class="text-muted fs-5">
+            Berkumpul, berbagi informasi, dan bekerja sama dalam lingkungan yang
+            sama
+          </p>
+        </div>
+
+        <!-- ISI -->
+        <div class="row justify-content-center g-4">
+
+          <!-- SEKOLAH -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card border-0 shadow-sm h-100 rounded-4 p-4 text-center"
+            >
+              <h4 class="fw-bold mb-3">
+                Kelompok Warga <br />
+                Sekolah
+              </h4>
+
+              <p class="text-muted mb-4">
+                Tempat berbagi kegiatan, keluhan sarana prasarana, dan kebijakan
+                sekolah agar lebih baik.
+              </p>
+
+              <div class="mb-4">
+                <span class="badge bg-success px-3 py-2">
+                  Dapat Diakses Semua Warga
+                </span>
+              </div>
+
+              <a
+                href="komunitas.html#sekolah"
+                class="btn btn-primary rounded-pill fw-bold py-2"
+              >
+                LIHAT KELOMPOK
+              </a>
+            </div>
+          </div>
+
+          <!-- MASYARAKAT -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card border-0 shadow-sm h-100 rounded-4 p-4 text-center"
+            >
+              <h4 class="fw-bold mb-3">
+                Kelompok Warga Masyarakat
+              </h4>
+
+              <p class="text-muted mb-4">
+                Tempat membahas keamanan, kebersihan, kegiatan lingkungan, dan
+                musyawarah warga sekitar.
+              </p>
+
+              <div class="mb-4">
+                <span class="badge bg-success px-3 py-2">
+                  Dapat Diakses Semua Warga
+                </span>
+              </div>
+
+              <a
+                href="komunitas.html#masyarakat"
+                class="btn btn-primary rounded-pill fw-bold py-2"
+              >
+                LIHAT KELOMPOK
+              </a>
+            </div>
+          </div>
+
+          <!-- KHUSUS -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card border-0 shadow-sm h-100 rounded-4 p-4 text-center"
+            >
+              <h4 class="fw-bold mb-3">
+                Kelompok Keamanan & Bantuan
+              </h4>
+
+              <p class="text-muted mb-4">
+                Pusat informasi keamanan dan bantuan darurat. Hanya untuk
+                anggota yang diizinkan saja.
+              </p>
+
+              <div class="mb-4">
+                <span class="badge bg-warning text-dark px-3 py-2">
+                  Perlu Persetujuan
+                </span>
+              </div>
+
+              <a
+                href="komunitas.html#khusus"
+                class="btn btn-outline-dark rounded-pill fw-bold py-2"
+              >
+                AJUKAN MASUK
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TOMBOL -->
+        <div class="text-center mt-5">
+          <a
+            href="komunitas.html"
+            class="btn btn-dark rounded-pill px-4 py-2 fw-bold"
+          >
+            LIHAT SEMUA KELOMPOK
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 🟡 FOOTER -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+
+        <div class="row text-center text-md-start">
+
+          <!-- KIRI -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold text-primary">LAPOR SINI</h5>
+
+            <p class="text-muted small">
+              Wadah Pengaduan Masyarakat & Sekolah. Tempat menyampaikan keluhan,
+              saran, dan informasi secara aman dan nyaman.
+            </p>
+          </div>
+
+          <!-- TENGAH -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-3">Navigasi Cepat</h6>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-muted text-decoration-none">
+                  Beranda
+                </a>
+              </li>
+
+              <li>
+                <a href="tentang.html" class="text-muted text-decoration-none">
+                  Tentang
+                </a>
+              </li>
+
+              <li>
+                <a href="cara.html" class="text-muted text-decoration-none">
+                  Cara Lapor
+                </a>
+              </li>
+
+              <li>
+                <a href="daftar.html" class="text-muted text-decoration-none">
+                  Daftar Laporan
+                </a>
+              </li>
+
+              <li>
+                <a href="profil.html" class="text-muted text-decoration-none">
+                  Profil Saya
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- KANAN -->
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-3">Kontak Pembuat</h6>
+
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-1">Mojokerto, Indonesia</li>
+
+              <li class="mb-1">+62 812-XXXX-XXXX</li>
+
+              <li class="mb-1">lapor_sini@gmail.com</li>
+
+              <li>SMK NEGERI ... | Kelas X RPL 2</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr class="border-secondary mt-4 mb-3" />
+
+        <p class="text-center text-muted small mb-0">
+          &copy; 2026 LAPOR SINI | Dibuat SISWA SMKN 2 KOTA MOJOKERTO - Semua
+          Hak Dilindungi
+        </p>
+
+      </div>
+    </footer>
+
+    </footer>
+
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

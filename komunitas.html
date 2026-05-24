@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - LAPOR SINI</title>
+
+    <!-- CSS UTAMA DULU, BARU LAINNYA -->
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- index.html -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- BIAR TULISANNYA SAMA PERSIS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!--  CSS KHUSUSGAMBAR SAMA UKURAN -->
+    <style>
+        .gambar-kelompok {
+            height: 200px; /* Tinggi sama semua */
+            object-fit: cover; /* Gambar pas, tidak gepeng, isi kotak */
+            object-position: center; /* Gambar di tengah */
+            width: 100%; /* Lebar penuh kotak */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🟡 BAGIAN MENU ATAS (SERAGAM UNTUK SEMUA HALAMAN) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold"
+          href="index.html"
+          title="Beranda - LAPOR SINI"
+        >
+           LAPOR SINI!!
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"> Beranda </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html"> Tentang </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="cara.html"> Cara Lapor </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="daftar.html"> Daftar Laporan </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html"> Profil </a>
+            </li>
+
+            <li class="nav-item mt-1 mt-lg-0 ms-lg-2">
+              <a
+                class="nav-link btn btn-light text-primary fw-bold px-3"
+                href="login.html"
+              >
+                Masuk
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- HEADER -->
+<section class="py-4 bg-primary text-white text-center">
+    <h2>KELOMPOK PERBINCANGAN</h2>
+    <p>Tempat diskusi, berbagi informasi, dan penyampaian aspirasi warga dalam lingkungan yang aman dan nyaman</p>
+</section>
+
+<!-- FILTER -->
+<div class="container py-4">
+
+    <div class="row text-center mb-5">
+        <div class="col"><div class="btn btn-outline-primary filter-btn w-100" data-target="sekolah">SEKOLAH</div></div>
+        <div class="col"><div class="btn btn-outline-primary filter-btn w-100" data-target="masyarakat">MASYARAKAT</div></div>
+        <div class="col"><div class="btn btn-outline-primary filter-btn w-100" data-target="khusus">KHUSUS</div></div>
+    </div>
+
+<div id="sekolah" class="bagian">
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/rpl.jpg" class="card-img-top gambar-kelompok" alt="X RPL 2">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">X RPL 2</h5>
+                    <small class="text-muted fst-italic mb-2">SMKN 2 Kota Mojokerto</small>
+                    <p class="text-muted card-text flex-grow-1">Belajar kode, desain web, dan berbagi proyek pemrograman antar siswa jurusan.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-3">Gabung Grup</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/tkj.jpg" class="card-img-top gambar-kelompok" alt="X TKJ 1">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">X TKJ 1</h5>
+                    <small class="text-muted fst-italic mb-2">SMKN 2 Kota Mojokerto</small>
+                    <p class="text-muted card-text flex-grow-1">Diskusi seputar jaringan, instalasi wifi, server, dan pemecahan masalah teknis.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-3">Gabung Grup</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/osis.jpg" class="card-img-top gambar-kelompok" alt="OSIS">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">OSIS</h5>
+                    <small class="text-muted fst-italic mb-2">SMPN 1 Gondang</small>
+                    <p class="text-muted card-text flex-grow-1">Wadah aspirasi siswa, perencanaan kegiatan, dan menjaga kerukunan sekolah.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-3">Gabung Grup</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/prmuka.jpg" class="card-img-top gambar-kelompok" alt="Pramuka">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Pramuka</h5>
+                    <small class="text-muted fst-italic mb-2">SMKN 2 Kota Mojokerto</small>
+                    <p class="text-muted card-text flex-grow-1">Kegiatan kepanduan, kedisiplinan, cinta alam, dan pengembangan karakter siswa.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-3">Gabung Grup</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/paskibraka.jpg" class="card-img-top gambar-kelompok" alt="Paskibra">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Paskibra</h5>
+                    <small class="text-muted fst-italic mb-2">SMKN 2 Kota Mojokerto</small>
+                    <p class="text-muted card-text flex-grow-1">Latihan baris-berbaris, kepemimpinan, dan upacara penghormatan bendera negara.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-3">Gabung Grup</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/mpr.jpg" class="card-img-top gambar-kelompok" alt="PMR">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">PMR</h5>
+                    <small class="text-muted fst-italic mb-2">SMKN 2 Kota Mojokerto</small>
+                    <p class="text-muted card-text flex-grow-1">Pelatihan pertolongan pertama, kesehatan dasar, dan kesiapsiagaan bencana sekolah.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-3">Gabung Grup</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- MASYARAKAT ✅ DIPERBAIKI: Deskripsi pas, tampilan menarik -->
+    <div id="masyarakat" class="bagian" style="display:none;">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 border-start border-primary border-4">
+                    <h5 class="fw-bold">Wilayah RT 01</h5>
+                    <small class="text-primary fst-italic mb-2 d-block">Desa Samben</small>
+                    <p class="text-muted small mt-1">Tempat lapor fasilitas rusak, jadwal kegiatan, dan informasi keamanan lingkungan.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-auto">Gabung Grup</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 border-start border-primary border-4">
+                    <h5 class="fw-bold">Wilayah RT 02</h5>
+                    <small class="text-primary fst-italic mb-2 d-block">Desa Sooko</small>
+                    <p class="text-muted small mt-1">Wadah komunikasi warga, bahas kebersihan, musyawarah, dan saran pembangunan desa.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-auto">Gabung Grup</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 border-start border-primary border-4">
+                    <h5 class="fw-bold">Karang Taruna</h5>
+                    <small class="text-primary fst-italic mb-2 d-block">Desa Samben</small>
+                    <p class="text-muted small mt-1">Wadah pemuda desa: kegiatan sosial, olahraga, seni, dan kerja sama kemajuan lingkungan.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-auto">Gabung Grup</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 border-start border-primary border-4">
+                    <h5 class="fw-bold">PKK</h5>
+                    <small class="text-primary fst-italic mb-2 d-block">Desa Jampirogo</small>
+                    <p class="text-muted small mt-1">Kegiatan ibu-ibu: keterampilan, kesehatan keluarga, dan pengembangan ekonomi warga.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-auto">Gabung Grup</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 border-start border-primary border-4">
+                    <h5 class="fw-bold">Posyandu</h5>
+                    <small class="text-primary fst-italic mb-2 d-block">Desa Pohjejer</small>
+                    <p class="text-muted small mt-1">Layanan kesehatan dasar: jadwal imunisasi, pemeriksaan ibu & anak, dan edukasi sehat.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-auto">Gabung Grup</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm h-100 border-start border-primary border-4">
+                    <h5 class="fw-bold">Keamanan Lingkungan</h5>
+                    <small class="text-primary fst-italic mb-2 d-block">Desa Mojo</small>
+                    <p class="text-muted small mt-1">Koordinasi ronda, lapor kejadian mencurigakan, jaga keamanan dan ketenteraman warga.</p>
+                    <button class="btn btn-primary w-100 join-btn mt-auto">Gabung Grup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- KHUSUS -->
+    <div id="khusus" class="bagian" style="display:none;">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm border-danger h-100">
+                    <h5 class="fw-bold text-danger">Kelompok Admin</h5><i>Sekitar Jombang</i>
+                    <p class="text-muted small mt-2">Akses terbatas: kelola laporan, verifikasi data, dan jaga keamanan sistem.</p>
+                    <button class="btn btn-danger w-100 khusus-btn">Masuk Area</button>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div class="card p-4 shadow-sm border-danger h-100">
+                    <h5 class="fw-bold text-danger">Kelompok Admin</h5><i>Sekitar Desa njeruk</i>
+                    <p class="text-muted small mt-2">Akses terbatas: kelola laporan, verifikasi data, dan jaga keamanan sistem.</p>
+                    <button class="btn btn-danger w-100 khusus-btn">Masuk Area</button>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div class="card p-4 shadow-sm border-danger h-100">
+                    <h5 class="fw-bold text-danger">Kelompok Admin</h5><i>Sekitar Wonosalam</i>
+                    <p class="text-muted small mt-2">Akses terbatas: kelola laporan, verifikasi data, dan jaga keamanan sistem.</p>
+                    <button class="btn btn-danger w-100 khusus-btn">Masuk Area</button>
+                </div>
+            </div>
+                        <div class="col-md-4">
+                <div class="card p-4 shadow-sm border-danger h-100">
+                    <h5 class="fw-bold text-danger">Kelompok Admin</h5><i>Sekitar Pacet</i>
+                    <p class="text-muted small mt-2">Akses terbatas: kelola laporan, verifikasi data, dan jaga keamanan sistem.</p>
+                    <button class="btn btn-danger w-100 khusus-btn">Masuk Area</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm border-danger h-100">
+                    <h5 class="fw-bold text-danger">Admin</h5><i>Sekitar Kabupaten Mojokerto</i>
+                    <p class="text-muted small mt-2">Akses terbatas: kelola laporan, verifikasi data, dan jaga keamanan sistem.</p>
+                    <button class="btn btn-danger w-100 khusus-btn">Masuk Area</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 shadow-sm border-danger h-100">
+                    <h5 class="fw-bold text-danger">Kelompok Moderator</h5><i>Sekitar Mojokerto</i>
+                    <p class="text-muted small mt-2">Tim pengawas: pantau diskusi, pastikan aturan, jaga komunitas aman dan sopan.</p>
+                    <button class="btn btn-danger w-100 khusus-btn">Masuk Area</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+     <!-- 🟡 FOOTER -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+
+        <div class="row text-center text-md-start">
+
+          <!-- KIRI -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold text-primary">LAPOR SINI</h5>
+
+            <p class="text-muted small">
+              Wadah Pengaduan Masyarakat & Sekolah. Tempat menyampaikan keluhan,
+              saran, dan informasi secara aman dan nyaman.
+            </p>
+          </div>
+
+          <!-- TENGAH -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-3">Navigasi Cepat</h6>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-muted text-decoration-none">
+                  Beranda
+                </a>
+              </li>
+
+              <li>
+                <a href="tentang.html" class="text-muted text-decoration-none">
+                  Tentang
+                </a>
+              </li>
+
+              <li>
+                <a href="cara.html" class="text-muted text-decoration-none">
+                  Cara Lapor
+                </a>
+              </li>
+
+              <li>
+                <a href="daftar.html" class="text-muted text-decoration-none">
+                  Daftar Laporan
+                </a>
+              </li>
+
+              <li>
+                <a href="profil.html" class="text-muted text-decoration-none">
+                  Profil Saya
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- KANAN -->
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-3">Kontak Pembuat</h6>
+
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-1">Mojokerto, Indonesia</li>
+
+              <li class="mb-1">+62 812-XXXX-XXXX</li>
+
+              <li class="mb-1">lapor_sini@gmail.com</li>
+
+              <li>SMK NEGERI ... | Kelas X RPL 2</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr class="border-secondary mt-4 mb-3" />
+
+        <p class="text-center text-muted small mb-0">
+          &copy; 2026 LAPOR SINI | Dibuat SISWA SMKN 2 KOTA MOJOKERTO - Semua
+          Hak Dilindungi
+        </p>
+
+      </div>
+    </footer>
+
+
+<script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// FILTER
+const tombol = document.querySelectorAll(".filter-btn");
+const bagian = document.querySelectorAll(".bagian");
+
+tombol.forEach(btn => {
+    btn.addEventListener("click", function () {
+        let target = this.getAttribute("data-target");
+
+        tombol.forEach(b => {
+            b.classList.remove("bg-primary","text-white");
+            b.classList.add("btn-outline-primary");
+        });
+
+        this.classList.remove("btn-outline-primary");
+        this.classList.add("bg-primary","text-white");
+
+        bagian.forEach(sec => {
+            sec.style.display = sec.id === target ? "block" : "none";
+        });
+    });
+});
+
+// DEFAULT SEKOLAH
+document.querySelector('[data-target="sekolah"]').click();
+
+// JOIN NORMAL
+document.querySelectorAll(".join-btn").forEach(btn=>{
+    btn.onclick = () => {
+        btn.innerHTML = "✔ Gabung";
+        btn.disabled = true;
+    }
+});
+
+// KHUSUS (PAKAI PASSWORD)
+document.querySelectorAll(".khusus-btn").forEach(btn=>{
+    btn.onclick = () => {
+        let kode = prompt("Masukkan kode akses:");
+
+        if(kode === "admin123"){
+            alert("Akses diterima!");
+            btn.innerHTML = "✔ Masuk";
+        } else {
+            alert("Akses ditolak!");
+        }
+    }
+});
+</script>
